@@ -3,6 +3,10 @@
   "version": "3.0.6",
   "description": "Run puppeteer within an electron app.",
   "main": "./bin/index.js",
+  "files": [
+    "bin",
+    "package.json"
+  ],
   "scripts": {
     "lint": "eslint --ext .ts,.js .",
     "build": "tsc",
