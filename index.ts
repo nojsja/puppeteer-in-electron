@@ -6,7 +6,7 @@ import {v4} from "uuid";
 type App = import("electron").App;
 type BrowserWindow = import("electron").BrowserWindow;
 type BrowserView = import("electron").BrowserView;
-type puppeteer = typeof import("puppeteer-core");
+type PuppeteerNode = typeof import("puppeteer-core").default;
 type Browser = import("puppeteer-core").Browser;
 type Page = import("puppeteer-core").Page;
 
@@ -80,10 +80,10 @@ export const initialize = async (app: App, port = 0): Promise<void> => {
  * Connects puppeteer to the electron app. Must call {@link initialize} before connecting.
  * When connecting multiple times, you use the same port.
  * @param {App} app The app imported from electron.
- * @param {puppeteer} puppeteer The imported puppeteer namespace.
+ * @param {PuppeteerNode} puppeteer The imported puppeteer namespace.
  * @returns {Promise<Browser>} An object containing the puppeteer browser, the port, and json received from DevTools.
  */
-export const connect = async (app: App, puppeteer: puppeteer): Promise<Browser> => {
+export const connect = async (app: App, puppeteer: PuppeteerNode): Promise<Browser> => {
   if (!puppeteer) {
     throw new Error("The parameter 'puppeteer' was not passed in.");
   }
