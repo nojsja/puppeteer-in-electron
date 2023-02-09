@@ -1,6 +1,6 @@
 {
-  "name": "puppeteer-in-electron",
-  "version": "3.0.5",
+  "name": "puppeteer-in-electron2",
+  "version": "3.0.6",
   "description": "Run puppeteer within an electron app.",
   "main": "./bin/index.js",
   "scripts": {
@@ -19,7 +19,7 @@
     "electron",
     "puppeteer"
   ],
-  "author": "Trevor Sundberg",
+  "author": "Trevor Sundberg,nojsja",
   "license": "MIT",
   "dependencies": {
     "@types/async-retry": "^1.4.1",

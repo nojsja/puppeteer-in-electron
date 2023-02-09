@@ -1,3 +1,5 @@
+> Tested with puppeteer-core@^19.6.2 and electron@18.0.3
+
 # Introducing puppeteer-in-electron
 Use puppeteer to test and control your electron application.
 ```
