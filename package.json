@@ -1,6 +1,6 @@
 {
-  "name": "puppeteer-in-electron2",
-  "version": "3.0.6",
+  "name": "@nojsja/puppeteer-in-electron",
+  "version": "3.0.7",
   "description": "Run puppeteer within an electron app.",
   "main": "./bin/index.js",
   "files": [
@@ -17,13 +17,13 @@
   },
   "repository": {
     "type": "git",
-    "url": "https://github.com/TrevorSundberg/puppeteer-in-electron.git"
+    "url": "https://github.com/nojsja/puppeteer-in-electron.git"
   },
   "keywords": [
     "electron",
     "puppeteer"
   ],
-  "author": "Trevor Sundberg,nojsja",
+  "author": "Trevor Sundberg, Nojsja",
   "license": "MIT",
   "dependencies": {
     "@types/async-retry": "^1.4.1",
